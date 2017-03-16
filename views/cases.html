@@ -1,0 +1,28 @@
+<div ng-controller='caseCont'>
+    <h3 class='col-md-offset-1'>Example Cases</h3>
+    <!-- 
+    DO WE NEED THE FOLLOWING? Wishy-washy and repetitive. WAS before the first blurb
+     Mr. Newman has represented many thousands of clients in courts in Pennsylvania, and throughout the United States, in cases ranging from disorderly conduct to murder. He has tried thousands of cases, many to a jury, in both state and federal court. All of these clients and cases are important to Mr. Newman. The following are just a few representative cases that Mr. Newman has handled: -->
+    <div class='panel panel-cont col-md-offset-1 col-md-10'>
+        <div class='panel-heading'>
+            <h4>Trial Results</h4>
+        </div>
+        <div class='panel-body'>
+            <i>Mr. Newman is a practicing Philadelphia, Pennsylvania, criminal defense lawyer. The following are examples of cases Mr. Newman has handled at the trial court level. Mr. Newman has represented many thousands of clients in courts in Pennsylvania, and throughout the United States, in cases ranging from disorderly conduct to murder. He has tried thousands of cases, many to a jury, in both state and federal court. All of these clients and cases are important to Mr. Newman. The following are just a few representative cases that Mr. Newman has handled.</i>
+            <br>
+            <br>
+            <p ng-repeat='cb in caseBlurbs' class='case-blurb'>{{cb}}</p>
+        </div>
+    </div>
+    <div class='panel panel-cont col-md-offset-1 col-md-10'>
+        <div class='panel-heading'>
+            <h4>Appeals Results</h4>
+        </div>
+        <div class='panel-body'>
+            <i>The following represents examples of Mr. Newman's results in the appeals courts. Of course, cases in which Mr. Newman has been successful at trial are not appealed.</i>
+            <br>
+            <br>
+            <p ng-repeat='ap in appeals' class='case-blurb'>{{ap}}</p>
+        </div>
+    </div>
+</div>

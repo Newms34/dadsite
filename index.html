@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+<head>
+    <title>Newman &amp; Associates</title>
+</head>
+
+<body ng-app='ghnSite' ng-controller='mainCont'>
+    <div class='container col-md-12'>
+        <ng-include src="'/views/nav.html'"></ng-include>
+    </div>
+    <div class='container col-md-12 view-wind' id='main-view'>
+        <ng-include src='currState'></ng-include>
+    </div>
+    <footer class='col-md-12'>
+        <ng-include src="'/views/feet.html'"></ng-include>
+    </footer>
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="./js/lib/angular.min.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>

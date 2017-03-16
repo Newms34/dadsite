@@ -1,0 +1,110 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(10, 10, 30, .7), rgba(10, 10, 30, .7)), url('.././img/tempBg.jpg');
+    background-attachment: fixed;
+}
+
+.navbar {
+    background: #202034;
+    box-shadow: -4px 0px 5px #000;
+    border-color: #202034;
+    & #navbar-collapse-1 {
+        background: #202034;
+    }
+    & li.btn-info {
+        background: #202034;
+        transition-duration: .2s;
+        &:hover {
+            background: #550;
+        }
+        & a {
+            color: #aaa;
+            &:visited {
+                color: #aaa;
+            }
+            &:hover {
+                color: #eee;
+            }
+        }
+    }
+}
+
+.view-wind {
+    width: 95%;
+    left: 2.5%;
+    top: 60px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 4px 4px 5px #000;
+    & img {
+        float: left;
+        margin: 5px;
+    }
+}
+
+.prac-ar {
+    position: relative;
+    top: 5px;
+    & .prac-ar-title {
+        // background: #FFF;
+        color: #000;
+        transition-duration: .2s;
+        padding: 2px;
+        cursor: pointer;
+        font-size: larger;
+        &:hover {
+            background: #c2c2ee;
+        }
+    }
+}
+
+hr {
+    border-color: #202034;
+}
+
+.work-sort {
+    & th {
+        cursor: pointer;
+        background: #202034;
+        transition-duration: .2s;
+        color: #eee;
+        &:hover {
+            background: #303064;
+            color: #fff;
+        }
+    }
+}
+.panel-cont{
+    padding:0px;
+    & .panel-heading{
+    color:#fff;
+    background-color:#202034;
+    }
+}
+.case-blurb{
+    border-bottom: 1px solid #aab;
+    padding:5px 0px 25px 0px;
+}
+#loc-map{
+    width:80%;
+    left:10%;
+    height:300px;
+}
+.footz{
+    color:#fff;
+    background:#202034;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    font-style:italic;
+    // font-weight:100;
+    height:30px;
+    line-height:30px;
+    font-size:10pt;
+    box-shadow:4px 0 5px #000;
+}

@@ -1,0 +1,51 @@
+<div ng-controller='pubCont'>
+    <div class='col-md-10 col-md-offset-1 panel panel-cont'>
+        <div class='panel-heading'>
+            
+            <h3>Publications and Lectures</h3>
+        </div>
+        <div class='panel-body'>
+            <i>
+    Mr. Newman's legal abilities extend beyond the courtroom; he has published numerous articles and given lectures on the criminal justice system. The following is a sample of these:
+    </i>
+            <hr>
+            <h4>Publications</h4>
+            <table class='table'>
+                <thead>
+                    <tr class='work-sort'>
+                        <th ng-click='sortThings("title","pub")'>Title <span ng-show='pubOrder=="title" && pubDir'>&#9660;</span><span ng-show='pubOrder=="title" && !pubDir'>&#9650;</span></th>
+                        <th ng-click='sortThings("pub","pub")'>Publication <span ng-show='pubOrder=="pub" && pubDir'>&#9660;</span><span ng-show='pubOrder=="pub" && !pubDir'>&#9650;</span></th>
+                        <th ng-click='sortThings("pubber","pub")'>Publisher <span ng-show='pubOrder=="pubber" && pubDir'>&#9660;</span><span ng-show='pubOrder=="pubber" && !pubDir'>&#9650;</span></th>
+                        <th ng-click='sortThings("date","pub")'>Date <span ng-show='pubOrder=="date" && pubDir'>&#9660;</span><span ng-show='pubOrder=="date" && !pubDir'>&#9650;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='w in pubs|orderBy:pubOrder:pubDir'>
+                        <td>{{w.title}}</td>
+                        <td>{{w.pub}}</td>
+                        <td>{{w.pubber}}</td>
+                        <td>{{w.date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h4>Lectures</h4>
+            <table class='table'>
+                <thead>
+                    <tr class='work-sort'>
+                        <th ng-click='sortThings("topic","lec")'>Topic <span ng-show='lecOrder=="topic" && pubDir'>&#9660;</span><span ng-show='lecOrder=="topic" && !lecDir'>&#9650;</span></th>
+                        <th ng-click='sortThings("loc","lec")'>Location <span ng-show='lecOrder=="loc" && lecDir'>&#9660;</span><span ng-show='lecOrder=="loc" && !lecDir'>&#9650;</span></th>
+                        <th ng-click='sortThings("date","lec")'>Date <span ng-show='lecOrder=="date" && lecDir'>&#9660;</span><span ng-show='lecOrder=="date" && !lecDir'>&#9650;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat='l in lecs|orderBy:lecOrder:lecDir'>
+                        <td>{{l.topic}}</td>
+                        <td>{{l.loc}}</td>
+                        <td>{{l.date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

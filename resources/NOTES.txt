@@ -1,0 +1,27 @@
+WP template?
+
+We should probly use either Wordpress or Squarespace.
+I'm leaning towards WP
+
+
+SITE FEATURES:
+
+HOME: Basic summary/image
+NOTEABLE CASES: list of cases. include results
+PUBLICATIONS: List of published works. Links to some?
+PRACTICE AREAS: What he does
+CONTACT: just contact info.
+
+Really no need for so-called 'advanced' features, like blogging, etc
+
+$8.25/mo wp, $16/mo SS
+
+Logo? I don't LOVE the logo, but something like it should work (also, its 'Newman AND Associates').
+
+
+THE GEM https://colorlib.com/wp/best-lawyer-wordpress-themes/
+
+2* "understanding federal sentencing". Which location was when?!
+
+
+strongly suggest read thru of case summaries, as some of them seem rather... wishy washy. would suggest removal || specifying of vaguer ones.

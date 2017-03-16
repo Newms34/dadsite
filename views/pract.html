@@ -1,0 +1,20 @@
+<div ng-controller='practCont'>
+    <div class='col-md-10 col-md-offset-1 panel panel-cont'>
+        <div class='panel-heading'>
+            <h3>Practice Areas</h3>
+        </div>
+        <div class='panel-body'>
+            <i>Mr. Newman practices law in the following areas</i>
+            <hr>
+            <i>Click a practice area for more information</i>
+            <div ng-repeat='ar in areas' class='prac-ar'>
+                <div class='col-md-12 prac-ar-title' ng-click='ar.showBlurb=!ar.showBlurb'>{{ar.title}}<span ng-show='ar.showBlurb'>&#9650;</span><span ng-show='!ar.showBlurb'>&#9660;</span></div>
+                <div class='col-md-12' ng-show='ar.showBlurb'>{{ar.txt}}
+                    <hr>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
