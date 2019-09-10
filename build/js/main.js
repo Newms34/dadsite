@@ -1,1 +1,1 @@
-const app = angular.module('ghnSite',[]);
+const app = angular.module('ghnSite',['ui.router']);

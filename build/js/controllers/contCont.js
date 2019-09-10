@@ -1,16 +1,16 @@
 app.controller('contCont', function($scope, $http) {
     $scope.showCont = false;
     $scope.contInfo = [{
-        lbl: '\uD83C\uDF0E Location',
+        lbl: 'Location',
         data: 'Suite 2126, The Land Title Building, 100 S Broad St, Philadelphia, PA 19110'
     }, {
-        lbl: '\u260E Phone',
+        lbl: 'Phone',
         data: '215-592-9400'
     }, {
-        lbl: '\uD83D\uDDB7 Fax',
-        data: '???-???-????'
+        lbl: 'Fax',
+        data: '215-574-0699'
     }, {
-        lbl: '\u2709 E-Mail',
+        lbl: 'E-Mail',
         data: 'ghnlawyer@yahoo.com',
         isEm:true
     }];
